@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC !-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<style type = "text/css">
+
+	</style>
+</head>
+
+
+<body>
+	<script type = "text/javascript">
+//the switch statement saves you from writing a bunch of if statements
+//and makes your code alot easier to maintain
+
+		var girl = "natalie";
+		
+		switch(girl){
+		
+			case "natalie":
+				document.write("You must like natalie portman");
+				break; //you use break to stop the loop as otherwise, it will test all of the case statements
+				
+			case "Ridwan":
+				document.write("Ridwan is a huncho");
+				break;
+			
+			case "Hannah":
+				document.write("Hannah looks like a banner");
+				break;
+
+			default: //this is default for if the name is not recognised or if the inpu tis empty 
+				document.write("I dont know this name");
+				//you dont need break at the end of your default since it is the last choice
+		}
+		
+		
+		
+	</script>
+</body>
+</html>

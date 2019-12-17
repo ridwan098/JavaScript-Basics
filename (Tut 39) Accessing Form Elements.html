@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC !-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script type = "text/javascript">	
+
+	</script>
+</head>
+
+
+<body>
+	
+	<!--Form-->
+	<form name = "ridwansForm">
+		Username: <input type = "text" name = "Username" />
+		Password: <input type = "password" name = "Password" />
+		<input type = "button" value = "Submit" />
+	</form>
+	
+
+	<!--javascript-->
+	<script type = "text/javascript">
+
+		document.write("Hey there!" + "<br /><hr />");
+								//will give you access to your first element- in this case, the username
+		var x = document.forms[0].elements[0].name;
+		//variable "x" is storing the name given to the name given to the first element.
+		document.write("Element 1 name is: " + x + "<br />");// this will say "usernamme"
+
+
+		//Another way to access your form: Using the name of the form
+		var y = document.ridwansForm.elements[1].name;
+		document.write("Element 2 name is: " + y + "<br />");//this will still print out "username" as it is the same as above, but the difference being that you are refferring to it by its name.
+
+
+
+		//you can also access the element through its name
+		var z = document.ridwansForm.Password.name;
+		document.write("It can also be accessed through this. Proof: " + z + "<br />");
+
+	</script>
+	
+	
+</body>
+</html>

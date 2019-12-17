@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC !-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script type = "text/javascript">	
+		//this is one way of creating an objec=t: through a contructor function
+		//common practice is to make your object in the head and then call it in the body
+		
+		//function		object name	(properties)
+		function person(name, age){ //this is the blue print for a function
+			//name of the object will be the stored as name
+			this.name = name
+			//age given will be stored as age
+			this.age = age
+		}
+		//creating a new instance of an object
+		//where you store the object, and the blue print you want to use
+		var john = new person("john cena", 19);
+		var taylor = new person("Taylor Swift", 27);
+	</script>
+</head>
+
+
+<body>
+
+	<script type = "text/javascript">
+					//name of object.property you want to access
+		document.write(john.name + "<br />");
+		document.write(taylor.age + "<br />");
+
+	</script>
+</body>
+</html>

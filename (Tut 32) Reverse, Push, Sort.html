@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC !-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<style type = "text/css">	
+	
+	h4 {text-align:center;
+	}
+	
+	</style>
+</head>
+
+
+<body>
+
+
+	<script type = "text/javascript">
+	//All of the array methods have not been covered in this tutorial, do your research to find out more!
+	// You dont need to save them in variables
+
+	var bp = new Array ("Head", "Shoulders", "Knees", "Toes");
+	
+	document.write("<i>Original Array: </i>" + bp);
+	
+	//reverse method
+	document.write("<hr />");
+	document.write("<h4>Reverse Method does this:-</h4>");
+	var reversed = bp.reverse(); //reverses the array
+	document.write(reversed + "<br />");
+	document.write("<hr />");
+	
+	//push method
+	document.write("<h4>Push Method</h4> <br /> <h5>This is the opposite of the Pop method and adds elements at the end of the Array</h5><br />");
+	bp.push("Tongue", "Liver");
+	document.write(bp);
+	document.write("<hr />");
+	
+	//sort method
+	document.write("<h4>Sort Method</h4> <br /> <h5>This sorts the elements in your array in alphabetical order</h5>");
+	sorted = bp.sort();//this sorts in alphabetical order
+	document.write(sorted);
+	document.write("<hr />");
+	
+	
+	</script>
+	
+	
+</body>
+</html>

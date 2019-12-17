@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC !-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script type = "text/javascript">	
+		function people (name, age){
+			this.name = name;
+			this.age = age;
+			//linking the method to the property
+			this.yearsUntilRetire = years2_retire;//you dont add parameters because it already take parameters from the object
+		}
+		/*methods take a value from these properties and
+		perform a calculation with them*/
+		
+		//this is the method
+		function years2_retire(){
+			var numYears = 65 - this.age;
+			return numYears;
+		}
+		
+		
+		
+		var natalie = new people ("Natalie portman", 28);
+		var ridwan = new people ("Ridwan Ishola", 18)
+		
+	</script>
+</head>
+
+
+<body>
+
+	<script type = "text/javascript">
+		document.write(natalie.yearsUntilRetire());//you add a parenthesis as this is a method
+		document.write(ridwan.yearsUntilRetire());
+	</script>
+</body>
+</html>

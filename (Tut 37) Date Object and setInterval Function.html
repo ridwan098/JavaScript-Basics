@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC !-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script type = "text/javascript">	
+
+	</script>
+</head>
+
+
+<body>
+		
+
+	<script type = "text/javascript">
+	//this will grap the current date and time
+	// the set interval function runs however much time you want it incremented by
+	
+	function doSomething(){
+		document.write("Tuna");
+	
+	}
+			//what function you want to run, and the increment in milliseconds, 1000= 1 second
+	setInterval("doSomething()", 1000);
+	
+	
+	/*Program: A basic clock*/
+	
+	function printTime(){
+		var now = new Date();
+		var hours = now.getHours();
+		var mins = now.getMinutes();
+		var seconds = now.getSeconds();
+		
+		document.write(hours + ":"  + mins + ":" + seconds + "<br />");
+	}
+	
+	setInterval("printTime()", 1000);
+	</script>
+	
+	
+</body>
+</html>

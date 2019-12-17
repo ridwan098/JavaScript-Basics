@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC !-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<style type = "text/css">
+
+	</style>
+</head>
+
+
+<body>
+	<script type = "text/javascript">
+		//global variable is a variable that is made outside of a function
+		//local variable is a vairable that is made inside of a function
+		
+		//Global Variable example
+		var girl = " Kelsie ";
+		
+		function spit(){
+		
+			document.write(girl);
+		
+		}
+		
+		spit();
+		
+		//Local Variable Example
+		function regurgitate(){
+			
+			var boy = "Ridwan"; //in this case, the variable is stored locally, so will not print when you call it outside of the function
+			document.write(boy);			
+		}
+		regurgitate();
+		document.write(boy);
+	</script>
+</body>
+</html>

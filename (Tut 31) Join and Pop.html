@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC !-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<style type = "text/css">	
+		h4 {text-align: center;
+		}
+	</style>
+</head>
+
+
+<body>
+
+
+
+	<script type = "text/javascript">
+		document.write("<hr />");
+		document.write("<h4>Join Method</h4>");
+		document.write("<hr /><br />");
+		// Join method takes an array and converts it into a string
+	
+		var movies = new Array("Avatar", "Good Will Hunting", "Vanilla Sky", "Fight Club");
+		
+		//empty parameters will mean that the movies are separated by commas
+		var string1 = movies.join();
+		
+		//parameters with "-" will mean that the movies are separated with "-"
+		var string2 = movies.join(" - ");
+		
+		
+		document.write("This is the \"Join\" method: " + string1 + "<br />");
+		document.write("This is the \"Join\" method when parameter is inserted: " + string2 + "<br />");
+		
+		document.write("<hr />");
+		document.write("<h4>Pop Method</h4>");
+		document.write("<hr /><br />");
+		
+		// the POP method will remove the last element from an array
+		document.write("This is the length of movies: " + movies.length);
+		document.write("This is the element that will be removed: " + movies[3]+ "<br />");
+		movies.pop();//this removes the last element from the array and doesn't take any parameters
+		
+		document.write("\"Movies 3\" or Fight Club does not even exist any more, so when printed, you get: "+ movies[3] + "<br />");
+		document.write("New length of movie is: " + movies.length + "<br />");
+	</script>
+	
+	
+</body>
+</html>

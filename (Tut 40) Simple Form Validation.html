@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC !-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script type = "text/javascript">	
+		function validator(){
+			if (document.ridwansForm.dbox.checked){
+				alert("Yp its checked!");
+			
+			}else 
+				alert("CHECK THE CHECKBOX");
+
+		}
+			
+	</script>
+</head>
+
+
+<body>
+	
+	<!--Form-->
+	<form name = "ridwansForm">
+		<input type = "checkbox" name = "dbox" />
+		<input type = "button" value = "Click Me" onclick= "validator()" />
+	</form>
+	
+
+	<!--javascript-->
+	<script type = "text/javascript">
+
+
+
+
+	</script>
+	
+	<!--
+
+	For those of you curious on how to retrieve input within the textfields all you have to do is document.myForm.myTextField.value The .value returns the value of whatever was placed within the text forms
+
+	-->
+</body>
+</html>
